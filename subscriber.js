@@ -12,7 +12,6 @@ const client = mqtt.connect(MQTT_URL);
 const app = express();
 app.use(cors());
 app.use(express.json());
-
 let activeTargets = {}; // type -> id
 const latest = {}; // key: "<type>_<id>" -> { suhu, ts, topic }
 
